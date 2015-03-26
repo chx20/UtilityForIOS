@@ -10,7 +10,7 @@
 		3F15BA3E1AC3E31A00EB0C74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15BA3D1AC3E31A00EB0C74 /* main.m */; };
 		3F15BA411AC3E31A00EB0C74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15BA401AC3E31A00EB0C74 /* AppDelegate.m */; };
 		3F15BA441AC3E31A00EB0C74 /* UtilityForIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F15BA421AC3E31A00EB0C74 /* UtilityForIOS.xcdatamodeld */; };
-		3F15BA471AC3E31A00EB0C74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15BA461AC3E31A00EB0C74 /* ViewController.m */; };
+		3F15BA471AC3E31A00EB0C74 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15BA461AC3E31A00EB0C74 /* KeyboardViewController.m */; };
 		3F15BA4A1AC3E31A00EB0C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F15BA481AC3E31A00EB0C74 /* Main.storyboard */; };
 		3F15BA4C1AC3E31A00EB0C74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15BA4B1AC3E31A00EB0C74 /* Images.xcassets */; };
 		3F15BA4F1AC3E31A00EB0C74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F15BA4D1AC3E31A00EB0C74 /* LaunchScreen.xib */; };
@@ -35,8 +35,8 @@
 		3F15BA3F1AC3E31A00EB0C74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F15BA401AC3E31A00EB0C74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F15BA431AC3E31A00EB0C74 /* UtilityForIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UtilityForIOS.xcdatamodel; sourceTree = "<group>"; };
-		3F15BA451AC3E31A00EB0C74 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3F15BA461AC3E31A00EB0C74 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F15BA451AC3E31A00EB0C74 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		3F15BA461AC3E31A00EB0C74 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		3F15BA491AC3E31A00EB0C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F15BA4B1AC3E31A00EB0C74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F15BA4E1AC3E31A00EB0C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -87,10 +87,9 @@
 		3F15BA3A1AC3E31A00EB0C74 /* UtilityForIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3F4E06311AC3F74F00782268 /* ViewControllers */,
 				3F15BA3F1AC3E31A00EB0C74 /* AppDelegate.h */,
 				3F15BA401AC3E31A00EB0C74 /* AppDelegate.m */,
-				3F15BA451AC3E31A00EB0C74 /* ViewController.h */,
-				3F15BA461AC3E31A00EB0C74 /* ViewController.m */,
 				3F15BA481AC3E31A00EB0C74 /* Main.storyboard */,
 				3F15BA4B1AC3E31A00EB0C74 /* Images.xcassets */,
 				3F15BA4D1AC3E31A00EB0C74 /* LaunchScreen.xib */,
@@ -133,6 +132,15 @@
 				3F3A0D0F1AC3E75800FC7D9D /* ChxTools.m */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		3F4E06311AC3F74F00782268 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F15BA451AC3E31A00EB0C74 /* KeyboardViewController.h */,
+				3F15BA461AC3E31A00EB0C74 /* KeyboardViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +246,7 @@
 				3F15BA411AC3E31A00EB0C74 /* AppDelegate.m in Sources */,
 				3F15BA3E1AC3E31A00EB0C74 /* main.m in Sources */,
 				3F3A0D101AC3E75800FC7D9D /* ChxTools.m in Sources */,
-				3F15BA471AC3E31A00EB0C74 /* ViewController.m in Sources */,
+				3F15BA471AC3E31A00EB0C74 /* KeyboardViewController.m in Sources */,
 				3F15BA441AC3E31A00EB0C74 /* UtilityForIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
