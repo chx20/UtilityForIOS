@@ -16,6 +16,10 @@
 		3F15BA4F1AC3E31A00EB0C74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F15BA4D1AC3E31A00EB0C74 /* LaunchScreen.xib */; };
 		3F15BA5B1AC3E31A00EB0C74 /* UtilityForIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15BA5A1AC3E31A00EB0C74 /* UtilityForIOSTests.m */; };
 		3F3A0D101AC3E75800FC7D9D /* ChxTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A0D0F1AC3E75800FC7D9D /* ChxTools.m */; };
+		3F4E06341AC3FF8000782268 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06331AC3FF7F00782268 /* WebViewController.m */; };
+		3F4E06371AC4F61600782268 /* WebViewTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E06361AC4F61600782268 /* WebViewTest.html */; };
+		3F4E063A1AC503AB00782268 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */; };
+		3F4E063B1AC503AB00782268 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,11 @@
 		3F15BA5A1AC3E31A00EB0C74 /* UtilityForIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilityForIOSTests.m; sourceTree = "<group>"; };
 		3F3A0D0E1AC3E75800FC7D9D /* ChxTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChxTools.h; path = UtilityForIOS/Tools/ChxTools.h; sourceTree = "<group>"; };
 		3F3A0D0F1AC3E75800FC7D9D /* ChxTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChxTools.m; path = UtilityForIOS/Tools/ChxTools.m; sourceTree = "<group>"; };
+		3F4E06321AC3FF7F00782268 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		3F4E06331AC3FF7F00782268 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		3F4E06361AC4F61600782268 /* WebViewTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WebViewTest.html; path = Res/WebViewTest.html; sourceTree = "<group>"; };
+		3F4E06381AC503AB00782268 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "UtilityForIOS/Tools/NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "UtilityForIOS/Tools/NSString+URLEncoding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,7 @@
 		3F15BA3A1AC3E31A00EB0C74 /* UtilityForIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3F4E06351AC4F5C200782268 /* Res */,
 				3F4E06311AC3F74F00782268 /* ViewControllers */,
 				3F15BA3F1AC3E31A00EB0C74 /* AppDelegate.h */,
 				3F15BA401AC3E31A00EB0C74 /* AppDelegate.m */,
@@ -128,6 +138,8 @@
 		3F3A0D0D1AC3E70400FC7D9D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3F4E06381AC503AB00782268 /* NSString+URLEncoding.h */,
+				3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */,
 				3F3A0D0E1AC3E75800FC7D9D /* ChxTools.h */,
 				3F3A0D0F1AC3E75800FC7D9D /* ChxTools.m */,
 			);
@@ -137,10 +149,20 @@
 		3F4E06311AC3F74F00782268 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F4E06321AC3FF7F00782268 /* WebViewController.h */,
+				3F4E06331AC3FF7F00782268 /* WebViewController.m */,
 				3F15BA451AC3E31A00EB0C74 /* KeyboardViewController.h */,
 				3F15BA461AC3E31A00EB0C74 /* KeyboardViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F4E06351AC4F5C200782268 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				3F4E06361AC4F61600782268 /* WebViewTest.html */,
+			);
+			name = Res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4E06371AC4F61600782268 /* WebViewTest.html in Resources */,
 				3F15BA4A1AC3E31A00EB0C74 /* Main.storyboard in Resources */,
 				3F15BA4F1AC3E31A00EB0C74 /* LaunchScreen.xib in Resources */,
 				3F15BA4C1AC3E31A00EB0C74 /* Images.xcassets in Resources */,
@@ -244,9 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F15BA411AC3E31A00EB0C74 /* AppDelegate.m in Sources */,
+				3F4E06341AC3FF8000782268 /* WebViewController.m in Sources */,
 				3F15BA3E1AC3E31A00EB0C74 /* main.m in Sources */,
 				3F3A0D101AC3E75800FC7D9D /* ChxTools.m in Sources */,
 				3F15BA471AC3E31A00EB0C74 /* KeyboardViewController.m in Sources */,
+				3F4E063A1AC503AB00782268 /* NSString+URLEncoding.m in Sources */,
 				3F15BA441AC3E31A00EB0C74 /* UtilityForIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4E063B1AC503AB00782268 /* NSString+URLEncoding.m in Sources */,
 				3F15BA5B1AC3E31A00EB0C74 /* UtilityForIOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"键盘功能测试";
+    
     /*
      方法二：给最外层的view添加一个手势响应UITapGestureRecognizer
      

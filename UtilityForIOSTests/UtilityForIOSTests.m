@@ -43,5 +43,15 @@
     NSLog(@"%@", strNow);
 }
 
+- (void)test_Bundle {
+    NSBundle* bundle = [NSBundle mainBundle];
+    NSLog(@"bundlePath: %@", [bundle bundlePath]);
+    NSLog(@"resourcePath: %@", [bundle resourcePath]);
+    NSLog(@"executablePath: %@", [bundle executablePath]);
+    
+    NSString* strWebFile = [ChxTools applicationBundleResourceFile:@"WebViewTest.html"];
+    NSLog(@"Web: %@", strWebFile);
+}
+
 
 @end

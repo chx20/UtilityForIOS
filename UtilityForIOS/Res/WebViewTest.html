@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            function setBackColor(){
+                document.body.style.backgroundColor = "#F7DE84";
+                return "OK";
+            }
+        
+        function callOcMethod(){
+            var o = new Object();
+            o.title = "Hello World";
+            o.message = "欢迎使用";
+            var js = JSON.stringify(o);
+            var url = "gap://XXXClass.XXMethod#" + js;
+            alert(url);
+            window.location = url;
+        }
+        </script>
+    </head>
+    <body>
+        这是一个测试网页 <br><br>
+        <button onclick="callOcMethod()">调用OC的方法</button>
+    </body>
+</html>

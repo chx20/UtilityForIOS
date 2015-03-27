@@ -31,6 +31,12 @@
     return path;
 }
 
++(NSString *)applicationBundleResourceFile:(NSString *)fileName {
+    NSString* resPath = [[NSBundle mainBundle] resourcePath];
+    NSString* filePath = [resPath stringByAppendingPathComponent:fileName];
+    return filePath;
+}
+
 +(NSString *)getCurrentDate {
     NSDateFormatter *dateFormatter = [NSDateFormatter new];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];

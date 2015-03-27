@@ -13,6 +13,7 @@
 +(NSString *)applicationCachesDirectory;
 +(NSString *)applicationDocumentsDirectory;
 +(NSString *)applicationDocumentsDirectoryFile:(NSString *)fileName;
++(NSString *)applicationBundleResourceFile:(NSString *)fileName;
 
 +(NSString *)getCurrentDate;
 

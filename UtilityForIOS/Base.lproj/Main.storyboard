@@ -1,10 +1,130 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dkl-wM-AQK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--基本功能模块测试-->
+        <scene sceneID="rdb-Vz-MMp">
+            <objects>
+                <tableViewController id="cLE-5B-qSu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Mgt-rq-eb8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="界面相关的功能" id="YSP-y9-nfJ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="w5D-D5-OX6">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w5D-D5-OX6" id="P0K-97-wpV">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5k-1u-4po">
+                                                    <rect key="frame" x="17" y="8" width="161" height="30"/>
+                                                    <state key="normal" title="键盘功能测试">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="BYZ-38-t0r" kind="show" id="MEW-HP-FgO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="nfd-Aq-JDT">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nfd-Aq-JDT" id="Zbs-Gh-owW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FQ-ft-Uwi">
+                                                    <rect key="frame" x="16" y="8" width="161" height="30"/>
+                                                    <state key="normal" title="WebView测试">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="zbH-Ni-YHa" kind="show" id="RKO-He-3Tx"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="IXY-IP-Q6U">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IXY-IP-Q6U" id="qA5-gU-PRu">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="cLE-5B-qSu" id="nbh-OG-90t"/>
+                            <outlet property="delegate" destination="cLE-5B-qSu" id="hOm-zB-oQq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="基本功能模块测试" id="5Rs-KM-EaW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRS-51-00U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="-202"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="YAK-Xm-Eav">
+            <objects>
+                <viewController id="zbH-Ni-YHa" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Obi-Zn-sJJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="mIF-GP-hrK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hpj-fS-Vvl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJl-56-6MR">
+                                <rect key="frame" x="16" y="72" width="568" height="227"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI0-sB-XnV">
+                                <rect key="frame" x="51" y="307" width="75" height="30"/>
+                                <state key="normal" title="从网址加载">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoadFromURL_touchUp:" destination="zbH-Ni-YHa" eventType="touchUpInside" id="Bsp-d2-HLv"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7KC-Tm-gD9">
+                                <rect key="frame" x="16" y="312" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni8-CS-qED">
+                                <rect key="frame" x="168" y="307" width="78" height="30"/>
+                                <state key="normal" title="调用JS函数">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEvalJS_TouchUp:" destination="zbH-Ni-YHa" eventType="touchUpInside" id="FTb-7p-M1F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.92941176469999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HJl-56-6MR" firstAttribute="leading" secondItem="Hpj-fS-Vvl" secondAttribute="leadingMargin" id="19c-X2-7ZW"/>
+                            <constraint firstItem="HJl-56-6MR" firstAttribute="top" secondItem="Obi-Zn-sJJ" secondAttribute="bottom" constant="8" id="Goe-zu-jGl"/>
+                            <constraint firstItem="HJl-56-6MR" firstAttribute="trailing" secondItem="Hpj-fS-Vvl" secondAttribute="trailingMargin" id="oWO-qX-yYD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actIndicator" destination="7KC-Tm-gD9" id="FqF-QD-yU4"/>
+                        <outlet property="web" destination="HJl-56-6MR" id="bNF-AA-3XT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Va-zs-a6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="198"/>
+        </scene>
         <!--Keyboard View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,8 +137,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="测试键盘隐藏" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YWY-6G-soL">
-                                <rect key="frame" x="16" y="28" width="166" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="测试键盘隐藏" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YWY-6G-soL">
+                                <rect key="frame" x="16" y="72" width="218" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="qwa-H8-fBo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -27,6 +150,10 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YWY-6G-soL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="SrO-jP-Q0t"/>
+                            <constraint firstItem="YWY-6G-soL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="n0A-V5-hMK"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="txtTestField" destination="YWY-6G-soL" id="22r-5R-IRk"/>
@@ -34,6 +161,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1074" y="-487"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dik-US-Asz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dkl-wM-AQK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QhO-1R-a5x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cLE-5B-qSu" kind="relationship" relationship="rootViewController" id="VNu-s7-f59"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6W-5N-sNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="-202"/>
         </scene>
     </scenes>
 </document>
