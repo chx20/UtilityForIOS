@@ -20,6 +20,11 @@
 		3F4E06371AC4F61600782268 /* WebViewTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E06361AC4F61600782268 /* WebViewTest.html */; };
 		3F4E063A1AC503AB00782268 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */; };
 		3F4E063B1AC503AB00782268 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */; };
+		3FCD37CC1AC97D3C00642B48 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */; };
+		3FCD37D11AC97E0600642B48 /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D01AC97E0600642B48 /* 美女.jpg */; };
+		3FCD37D21AC97E0600642B48 /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D01AC97E0600642B48 /* 美女.jpg */; };
+		3FCD37D41AC97F5500642B48 /* 小姑娘.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */; };
+		3FCD37D51AC97F5500642B48 /* 小姑娘.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,10 @@
 		3F4E06361AC4F61600782268 /* WebViewTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WebViewTest.html; path = Res/WebViewTest.html; sourceTree = "<group>"; };
 		3F4E06381AC503AB00782268 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "UtilityForIOS/Tools/NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "UtilityForIOS/Tools/NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		3FCD37CA1AC97D3C00642B48 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		3FCD37D01AC97E0600642B48 /* 美女.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "美女.jpg"; path = "Res/美女.jpg"; sourceTree = "<group>"; };
+		3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "小姑娘.jpg"; path = "Res/小姑娘.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +162,8 @@
 				3F4E06331AC3FF7F00782268 /* WebViewController.m */,
 				3F15BA451AC3E31A00EB0C74 /* KeyboardViewController.h */,
 				3F15BA461AC3E31A00EB0C74 /* KeyboardViewController.m */,
+				3FCD37CA1AC97D3C00642B48 /* GestureViewController.h */,
+				3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +171,8 @@
 		3F4E06351AC4F5C200782268 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */,
+				3FCD37D01AC97E0600642B48 /* 美女.jpg */,
 				3F4E06361AC4F61600782268 /* WebViewTest.html */,
 			);
 			name = Res;
@@ -245,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCD37D41AC97F5500642B48 /* 小姑娘.jpg in Resources */,
+				3FCD37D11AC97E0600642B48 /* 美女.jpg in Resources */,
 				3F4E06371AC4F61600782268 /* WebViewTest.html in Resources */,
 				3F15BA4A1AC3E31A00EB0C74 /* Main.storyboard in Resources */,
 				3F15BA4F1AC3E31A00EB0C74 /* LaunchScreen.xib in Resources */,
@@ -256,6 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCD37D51AC97F5500642B48 /* 小姑娘.jpg in Resources */,
+				3FCD37D21AC97E0600642B48 /* 美女.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCD37CC1AC97D3C00642B48 /* GestureViewController.m in Sources */,
 				3F15BA411AC3E31A00EB0C74 /* AppDelegate.m in Sources */,
 				3F4E06341AC3FF8000782268 /* WebViewController.m in Sources */,
 				3F15BA3E1AC3E31A00EB0C74 /* main.m in Sources */,
