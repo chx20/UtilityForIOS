@@ -25,6 +25,7 @@
 		3FCD37D21AC97E0600642B48 /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D01AC97E0600642B48 /* 美女.jpg */; };
 		3FCD37D41AC97F5500642B48 /* 小姑娘.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */; };
 		3FCD37D51AC97F5500642B48 /* 小姑娘.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */; };
+		3FED0BA31ACA8BA100042E18 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FED0BA21ACA8BA100042E18 /* GCDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		3FCD37D01AC97E0600642B48 /* 美女.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "美女.jpg"; path = "Res/美女.jpg"; sourceTree = "<group>"; };
 		3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "小姑娘.jpg"; path = "Res/小姑娘.jpg"; sourceTree = "<group>"; };
+		3FED0BA11ACA8BA100042E18 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		3FED0BA21ACA8BA100042E18 /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				3F15BA461AC3E31A00EB0C74 /* KeyboardViewController.m */,
 				3FCD37CA1AC97D3C00642B48 /* GestureViewController.h */,
 				3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */,
+				3FED0BA11ACA8BA100042E18 /* GCDViewController.h */,
+				3FED0BA21ACA8BA100042E18 /* GCDViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCD37CC1AC97D3C00642B48 /* GestureViewController.m in Sources */,
+				3FED0BA31ACA8BA100042E18 /* GCDViewController.m in Sources */,
 				3F15BA411AC3E31A00EB0C74 /* AppDelegate.m in Sources */,
 				3F4E06341AC3FF8000782268 /* WebViewController.m in Sources */,
 				3F15BA3E1AC3E31A00EB0C74 /* main.m in Sources */,
