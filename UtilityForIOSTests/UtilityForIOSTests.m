@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "ChxTools.h"
+#import "Utils.h"
+#import "WQPlaySound.h"
 
 @interface UtilityForIOSTests : XCTestCase
 
@@ -18,7 +19,7 @@
 
 
 - (void)test_Utility_applicationDirectory {
-    NSString* strDoc = [ChxTools applicationDocumentsDirectory];
+    NSString* strDoc = [Utils applicationDocumentsDirectory];
     /*
      NSLog(strDoc);
      在Xcode 4.2(iOS 5)之后，貌似苹果更新的编译器，出了支持ARC的Apple LLVM compiler 3.0。
@@ -29,17 +30,17 @@
      */
     NSLog(@"%@", strDoc);
     
-    NSString* strFile = [ChxTools applicationDocumentsDirectoryFile:@"test.xml"];
+    NSString* strFile = [Utils applicationDocumentsDirectoryFile:@"test.xml"];
     NSLog(@"%@", strFile);
     
     
-    NSString* strCache = [ChxTools applicationCachesDirectory];
+    NSString* strCache = [Utils applicationCachesDirectory];
     NSLog(@"%@", strCache);
 }
 
 
 - (void)test_Utility_date {
-    NSString* strNow = [ChxTools getCurrentDate];
+    NSString* strNow = [Utils getCurrentDate];
     NSLog(@"%@", strNow);
 }
 
@@ -49,8 +50,22 @@
     NSLog(@"resourcePath: %@", [bundle resourcePath]);
     NSLog(@"executablePath: %@", [bundle executablePath]);
     
-    NSString* strWebFile = [ChxTools applicationBundleResourceFile:@"WebViewTest.html"];
+    NSString* strWebFile = [Utils applicationBundleResourceFile:@"WebViewTest.html"];
     NSLog(@"Web: %@", strWebFile);
+}
+
+- (void)test_WQPlaySound {
+    
+    //振动
+    WQPlaySound *sound = [[WQPlaySound alloc]initForPlayingVibrate];
+    [sound play];
+    
+    //系统音效，以Tock为例
+    WQPlaySound *sound1 = [[WQPlaySound alloc]initForPlayingSystemSoundEffectWith:@"Tock" ofType:@"aiff"];
+    [sound1 play];
+    
+    WQPlaySound *sound2 = [[WQPlaySound alloc]initForPlayingSoundEffectWith:@"tap.aif"];
+    [sound2 play];
 }
 
 

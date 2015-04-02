@@ -7,7 +7,7 @@
 //
 
 #import "WebViewController.h"
-#import "ChxTools.h"
+#import "Utils.h"
 #import "NSString+URLEncoding.h"
 #import <Foundation/NSJSONSerialization.h>
 
@@ -34,7 +34,7 @@
 }
 
 - (IBAction)btnEvalJS_TouchUp:(id)sender {
-    NSString* webFile = [ChxTools applicationBundleResourceFile:@"WebViewTest.html"];
+    NSString* webFile = [Utils applicationBundleResourceFile:@"WebViewTest.html"];
     NSURL* url = [[NSURL alloc] initWithString:webFile];
     NSURLRequest* urlReq = [NSURLRequest requestWithURL:url];
     [_web loadRequest:urlReq];

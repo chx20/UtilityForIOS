@@ -15,11 +15,19 @@
 		3F15BA4C1AC3E31A00EB0C74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15BA4B1AC3E31A00EB0C74 /* Images.xcassets */; };
 		3F15BA4F1AC3E31A00EB0C74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F15BA4D1AC3E31A00EB0C74 /* LaunchScreen.xib */; };
 		3F15BA5B1AC3E31A00EB0C74 /* UtilityForIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15BA5A1AC3E31A00EB0C74 /* UtilityForIOSTests.m */; };
-		3F3A0D101AC3E75800FC7D9D /* ChxTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A0D0F1AC3E75800FC7D9D /* ChxTools.m */; };
+		3F3A0D101AC3E75800FC7D9D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A0D0F1AC3E75800FC7D9D /* Utils.m */; };
 		3F4E06341AC3FF8000782268 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06331AC3FF7F00782268 /* WebViewController.m */; };
 		3F4E06371AC4F61600782268 /* WebViewTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E06361AC4F61600782268 /* WebViewTest.html */; };
 		3F4E063A1AC503AB00782268 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */; };
 		3F4E063B1AC503AB00782268 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */; };
+		3F59423B1ACB8C4A00771879 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5942391ACB8C4A00771879 /* ImagePickerViewController.m */; };
+		3F5942411ACB8F7200771879 /* FunctionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5942401ACB8F7200771879 /* FunctionTableViewController.m */; };
+		3F5E639F1ACD2EE70093A173 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E639E1ACD2EE70093A173 /* QRCodeViewController.m */; };
+		3F5E63A21ACD2F8A0093A173 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E63A01ACD2F8A0093A173 /* line@2x.png */; };
+		3F5E63A31ACD2F8A0093A173 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E63A11ACD2F8A0093A173 /* pick_bg@2x.png */; };
+		3F5E63A61ACD363A0093A173 /* WQPlaySound.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E63A51ACD363A0093A173 /* WQPlaySound.m */; };
+		3F5E63A81ACD36D80093A173 /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E63A71ACD36D80093A173 /* tap.aif */; };
+		3F5E63A91ACD36D80093A173 /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E63A71ACD36D80093A173 /* tap.aif */; };
 		3FCD37CC1AC97D3C00642B48 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */; };
 		3FCD37D11AC97E0600642B48 /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D01AC97E0600642B48 /* 美女.jpg */; };
 		3FCD37D21AC97E0600642B48 /* 美女.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD37D01AC97E0600642B48 /* 美女.jpg */; };
@@ -53,13 +61,24 @@
 		3F15BA541AC3E31A00EB0C74 /* UtilityForIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilityForIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F15BA591AC3E31A00EB0C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F15BA5A1AC3E31A00EB0C74 /* UtilityForIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilityForIOSTests.m; sourceTree = "<group>"; };
-		3F3A0D0E1AC3E75800FC7D9D /* ChxTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChxTools.h; path = UtilityForIOS/Tools/ChxTools.h; sourceTree = "<group>"; };
-		3F3A0D0F1AC3E75800FC7D9D /* ChxTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChxTools.m; path = UtilityForIOS/Tools/ChxTools.m; sourceTree = "<group>"; };
+		3F3A0D0E1AC3E75800FC7D9D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = UtilityForIOS/Tools/Utils.h; sourceTree = "<group>"; };
+		3F3A0D0F1AC3E75800FC7D9D /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = UtilityForIOS/Tools/Utils.m; sourceTree = "<group>"; };
 		3F4E06321AC3FF7F00782268 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		3F4E06331AC3FF7F00782268 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		3F4E06361AC4F61600782268 /* WebViewTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WebViewTest.html; path = Res/WebViewTest.html; sourceTree = "<group>"; };
 		3F4E06381AC503AB00782268 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "UtilityForIOS/Tools/NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "UtilityForIOS/Tools/NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		3F5942381ACB8C4A00771879 /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
+		3F5942391ACB8C4A00771879 /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
+		3F59423F1ACB8F7200771879 /* FunctionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionTableViewController.h; sourceTree = "<group>"; };
+		3F5942401ACB8F7200771879 /* FunctionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionTableViewController.m; sourceTree = "<group>"; };
+		3F5E639D1ACD2EE70093A173 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		3F5E639E1ACD2EE70093A173 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		3F5E63A01ACD2F8A0093A173 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "line@2x.png"; path = "Res/line@2x.png"; sourceTree = "<group>"; };
+		3F5E63A11ACD2F8A0093A173 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pick_bg@2x.png"; path = "Res/pick_bg@2x.png"; sourceTree = "<group>"; };
+		3F5E63A41ACD363A0093A173 /* WQPlaySound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WQPlaySound.h; path = UtilityForIOS/Tools/WQPlaySound.h; sourceTree = "<group>"; };
+		3F5E63A51ACD363A0093A173 /* WQPlaySound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WQPlaySound.m; path = UtilityForIOS/Tools/WQPlaySound.m; sourceTree = "<group>"; };
+		3F5E63A71ACD36D80093A173 /* tap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = tap.aif; path = Res/tap.aif; sourceTree = "<group>"; };
 		3FCD37CA1AC97D3C00642B48 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		3FCD37D01AC97E0600642B48 /* 美女.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "美女.jpg"; path = "Res/美女.jpg"; sourceTree = "<group>"; };
@@ -112,6 +131,8 @@
 				3F4E06311AC3F74F00782268 /* ViewControllers */,
 				3F15BA3F1AC3E31A00EB0C74 /* AppDelegate.h */,
 				3F15BA401AC3E31A00EB0C74 /* AppDelegate.m */,
+				3F59423F1ACB8F7200771879 /* FunctionTableViewController.h */,
+				3F5942401ACB8F7200771879 /* FunctionTableViewController.m */,
 				3F15BA481AC3E31A00EB0C74 /* Main.storyboard */,
 				3F15BA4B1AC3E31A00EB0C74 /* Images.xcassets */,
 				3F15BA4D1AC3E31A00EB0C74 /* LaunchScreen.xib */,
@@ -152,8 +173,10 @@
 			children = (
 				3F4E06381AC503AB00782268 /* NSString+URLEncoding.h */,
 				3F4E06391AC503AB00782268 /* NSString+URLEncoding.m */,
-				3F3A0D0E1AC3E75800FC7D9D /* ChxTools.h */,
-				3F3A0D0F1AC3E75800FC7D9D /* ChxTools.m */,
+				3F3A0D0E1AC3E75800FC7D9D /* Utils.h */,
+				3F3A0D0F1AC3E75800FC7D9D /* Utils.m */,
+				3F5E63A41ACD363A0093A173 /* WQPlaySound.h */,
+				3F5E63A51ACD363A0093A173 /* WQPlaySound.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -169,6 +192,10 @@
 				3FCD37CB1AC97D3C00642B48 /* GestureViewController.m */,
 				3FED0BA11ACA8BA100042E18 /* GCDViewController.h */,
 				3FED0BA21ACA8BA100042E18 /* GCDViewController.m */,
+				3F5942381ACB8C4A00771879 /* ImagePickerViewController.h */,
+				3F5942391ACB8C4A00771879 /* ImagePickerViewController.m */,
+				3F5E639D1ACD2EE70093A173 /* QRCodeViewController.h */,
+				3F5E639E1ACD2EE70093A173 /* QRCodeViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +203,9 @@
 		3F4E06351AC4F5C200782268 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				3F5E63A71ACD36D80093A173 /* tap.aif */,
+				3F5E63A01ACD2F8A0093A173 /* line@2x.png */,
+				3F5E63A11ACD2F8A0093A173 /* pick_bg@2x.png */,
 				3FCD37D31AC97F5500642B48 /* 小姑娘.jpg */,
 				3FCD37D01AC97E0600642B48 /* 美女.jpg */,
 				3F4E06361AC4F61600782268 /* WebViewTest.html */,
@@ -263,10 +293,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5E63A21ACD2F8A0093A173 /* line@2x.png in Resources */,
 				3FCD37D41AC97F5500642B48 /* 小姑娘.jpg in Resources */,
+				3F5E63A31ACD2F8A0093A173 /* pick_bg@2x.png in Resources */,
 				3FCD37D11AC97E0600642B48 /* 美女.jpg in Resources */,
 				3F4E06371AC4F61600782268 /* WebViewTest.html in Resources */,
 				3F15BA4A1AC3E31A00EB0C74 /* Main.storyboard in Resources */,
+				3F5E63A81ACD36D80093A173 /* tap.aif in Resources */,
 				3F15BA4F1AC3E31A00EB0C74 /* LaunchScreen.xib in Resources */,
 				3F15BA4C1AC3E31A00EB0C74 /* Images.xcassets in Resources */,
 			);
@@ -276,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5E63A91ACD36D80093A173 /* tap.aif in Resources */,
 				3FCD37D51AC97F5500642B48 /* 小姑娘.jpg in Resources */,
 				3FCD37D21AC97E0600642B48 /* 美女.jpg in Resources */,
 			);
@@ -288,14 +322,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5E63A61ACD363A0093A173 /* WQPlaySound.m in Sources */,
+				3F5942411ACB8F7200771879 /* FunctionTableViewController.m in Sources */,
 				3FCD37CC1AC97D3C00642B48 /* GestureViewController.m in Sources */,
+				3F5E639F1ACD2EE70093A173 /* QRCodeViewController.m in Sources */,
 				3FED0BA31ACA8BA100042E18 /* GCDViewController.m in Sources */,
 				3F15BA411AC3E31A00EB0C74 /* AppDelegate.m in Sources */,
 				3F4E06341AC3FF8000782268 /* WebViewController.m in Sources */,
 				3F15BA3E1AC3E31A00EB0C74 /* main.m in Sources */,
-				3F3A0D101AC3E75800FC7D9D /* ChxTools.m in Sources */,
+				3F3A0D101AC3E75800FC7D9D /* Utils.m in Sources */,
 				3F15BA471AC3E31A00EB0C74 /* KeyboardViewController.m in Sources */,
 				3F4E063A1AC503AB00782268 /* NSString+URLEncoding.m in Sources */,
+				3F59423B1ACB8C4A00771879 /* ImagePickerViewController.m in Sources */,
 				3F15BA441AC3E31A00EB0C74 /* UtilityForIOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

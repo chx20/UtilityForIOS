@@ -24,6 +24,7 @@
 - (IBAction)btnGroup_TouchUp:(id)sender;
 - (IBAction)btnBarrierTest_TouchUp:(id)sender;
 - (IBAction)btnApply_TouchUp:(id)sender;
+- (IBAction)btnAfter_TouchUp:(id)sender;
 @end
 
 
@@ -96,6 +97,19 @@
     dispatch_apply(5, queue, ^(size_t index){
         NSLog(@"dispatch_apply test: %ld", index);
     });
+}
+
+/*
+ Dispatch After
+ 主要用于延迟执行一些代码
+ */
+- (IBAction)btnAfter_TouchUp:(id)sender {
+    double delayInSeconds = 3.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds*NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        NSLog(@"dispatch_after: %f", delayInSeconds);
+    });
+    
 }
 
 /*

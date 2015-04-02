@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ChxTools : NSObject
+@interface Utils : NSObject
 
 +(NSString *)applicationCachesDirectory;
 +(NSString *)applicationDocumentsDirectory;

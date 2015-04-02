@@ -6,10 +6,10 @@
 //  Copyright (c) 2015年 chx20. All rights reserved.
 //
 
-#import "ChxTools.h"
+#import "Utils.h"
 
 
-@implementation ChxTools
+@implementation Utils
 
 //NSCachesDirectory: location of discardable cache files (Library/Caches)
 +(NSString *)applicationCachesDirectory {
